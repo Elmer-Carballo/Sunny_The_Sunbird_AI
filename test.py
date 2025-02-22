@@ -15,14 +15,22 @@ os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Set path to your PDF file
-PDF_PATH = "path to your pdf here"
+PDF_PATH = os.getenv("PDF_FILE")
 
 def get_pdf_text(pdf_path):
     text = ""
     pdf_reader = PdfReader(pdf_path)
-    for page in pdf_reader.pages:
-        text += page.extract_text()
+    
+    for i, page in enumerate(pdf_reader.pages):
+        page_text = page.extract_text()
+        if page_text:
+            text += page_text
+        else:
+            print(f"⚠️ Warning: Page {i} could not be extracted.")
+
+    print("Extracted Text Preview:", text[:500])  # Print first 500 characters
     return text
+
 
 def get_text_chunks(text):
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=10000, chunk_overlap=1000)
@@ -44,7 +52,7 @@ def get_conversational_chain():
     Answer:
     """
 
-    model = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.3)
+    model = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.7)
 
     prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
     chain = load_qa_chain(model, chain_type="stuff", prompt=prompt)
@@ -54,7 +62,7 @@ def get_conversational_chain():
 def user_input(user_question):
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
-    new_db = FAISS.load_local("faiss_index", embeddings)
+    new_db = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization= True)
     docs = new_db.similarity_search(user_question)
 
     chain = get_conversational_chain()
@@ -71,10 +79,10 @@ def response_generator(user_question):
     for word in response.split():
         yield word + " "
 
-st.set_page_config(page_title="UjjwalDeepXIXC", page_icon=r"logo.png", layout="centered", initial_sidebar_state="auto", menu_items=None)
-st.header(":violet[Chat]Bot",divider='rainbow', help = "This bot is designed by Ujjwal Deep to address all of your questions hehe")
-st.subheader("Hello! There, How can I help you Today- 👩‍💻")
-st.caption(":violet[what a] :orange[good day] :violet[it is] :violet[today] :blue[ᓚᘏᗢ]")
+st.set_page_config(page_title="Martin's SunbirdAI", page_icon=r"logo.png", layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.header(":blue[SunbirdAI]Bot",divider='orange', help = "Sunny is designed by Martin to address all of your questions about Fresno Pacific University")
+st.subheader("Hello! How can SunbirdAI help you today? -🐤")
+st.caption(":blue[What a] :blue[sunny day] :blue[it is] :blue[today 🌞]")
 
 # Process the PDF file automatically
 pdf_text = get_pdf_text(PDF_PATH)
