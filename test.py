@@ -81,7 +81,7 @@ def response_generator(user_question):
 
 st.set_page_config(page_title="SunbirdAI", page_icon=r"logo.png", layout="centered", initial_sidebar_state="auto", menu_items=None)
 st.header(":blue[SunbirdAI]Bot",divider='orange', help = "Sunny is designed by FPU team to address all of your questions about Fresno Pacific University")
-st.subheader("Hello! How can SunbirdAI help you today? -🐤")
+st.subheader("Hello! How can SunbirdAI help you today? 🐤")
 st.caption(":blue[What a] :blue[sunny day] :blue[it is] :blue[today 🌞]")
 
 # Process the PDF file automatically
