@@ -52,7 +52,7 @@ def get_conversational_chain():
     Answer:
     """
 
-    model = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.7)
+    model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.7)
 
     prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
     chain = load_qa_chain(model, chain_type="stuff", prompt=prompt)
@@ -79,8 +79,8 @@ def response_generator(user_question):
     for word in response.split():
         yield word + " "
 
-st.set_page_config(page_title="Martin's SunbirdAI", page_icon=r"logo.png", layout="centered", initial_sidebar_state="auto", menu_items=None)
-st.header(":blue[SunbirdAI]Bot",divider='orange', help = "Sunny is designed by Martin to address all of your questions about Fresno Pacific University")
+st.set_page_config(page_title="SunbirdAI", page_icon=r"logo.png", layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.header(":blue[SunbirdAI]Bot",divider='orange', help = "Sunny is designed by FPU team to address all of your questions about Fresno Pacific University")
 st.subheader("Hello! How can SunbirdAI help you today? -🐤")
 st.caption(":blue[What a] :blue[sunny day] :blue[it is] :blue[today 🌞]")
 
@@ -97,7 +97,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 
-if prompt := st.chat_input("Technology and Networking are the most powerful weapons"):
+if prompt := st.chat_input("Type what is on your mind"):
     # Add user message to chat history
     st.session_state.messages.append({"role": "user", "content": prompt})
     # Display user message in chat message container
