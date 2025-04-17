@@ -6,7 +6,7 @@ This ChatBot is a conversational bot designed to address various questions. It a
 
 </hr >
 
-## Installation
+## **Objectives**
 To run this ChatBot, you need to follow these steps:
 
 1. Ensure you have Python installed on your system.
@@ -17,23 +17,29 @@ pip install -r requirements.txt
 ```
 4. Set up your Google API key by creating a `.env` file and adding your key:
 
-## Usage
-Once you have installed the necessary dependencies and set up your Google API key, you can run the application using Streamlit. Execute the following command:
-```
-Streamlit run test.py
-```
-This command will start the Streamlit server, and you can access the application in your web browser.
+## **Timeline**
 
-## Features
-- **Automatic PDF Processing:** The application automatically extracts text from a provided PDF file.
-- **Conversational Interface:** Users can interact with the bot by asking questions related to the content of the PDF file.
-- **Dynamic Chat History:** The application maintains a chat history, displaying both user questions and bot responses.
-- **Natural Language Understanding:** The bot employs advanced language models to understand and respond to user queries effectively.
 
-## Contributing
-Contributions to this ChatBot project are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+| **Phase**         | **Activities**                    | **Duration**    |
+|--------------------|------------------------------------|-----------------|
+| Planning           | Set goals, assign roles, develop strategies | 4 weeks         |
+| Execution          | Carry out projects and track progress       | 6 months        |
+| Evaluation         | Review outcomes and gather feedback         | 4 weeks         |
 
-## License
+---
+
+## **Actionable Items**
+- 
+- 
+- 
+
+---
+
+
+## **Additional Resources**
+
+
+## **Closing**
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 
