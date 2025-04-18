@@ -1,10 +1,6 @@
 # ChatBot using Gemini API and streamlit
 ## Overview
-This ChatBot is a conversational bot designed to address various questions. It automatically processes information from a provided PDF file and leverages Gemini API for processing techniques and respond to user inquiries effectively.
-
-<img src="https://github.com/UjjwalDeepXCIX/Gemini_API_Chatbot_using_streamlit/blob/edce13fa3085e5919324e301d3470d6fb126673a/Screenshot%20(108).png" alt="ChatBot Image" width="800"/>
-
-</hr >
+This ChatBot is a conversational bot designed to address various questions about Fresno Pacific University. It automatically processes information from a provided PDF file and leverages the Gemini API for processing techniques and responds to user inquiries effectively.
 
 ## Installation
 To run this ChatBot, you need to follow these steps:
