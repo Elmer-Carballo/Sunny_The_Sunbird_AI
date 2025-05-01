@@ -185,9 +185,10 @@ Multilingual Support: Enabling conversations in multiple languages.
 This document provides a structured approach to software product design by outlining requirements, user stories, and chatbot flows. Further refinements will be made as development progresses. 
 
 ## Next Steps 
-Finalize requirements through stakeholder review. 
-Validate chatbot flows with sample user testing. 
-Develop a prototype for initial user feedback. 
+
+- Finalize requirements through stakeholder review. 
+- Validate chatbot flows with sample user testing. 
+- Develop a prototype for initial user feedback. 
 
 
 
