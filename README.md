@@ -60,18 +60,12 @@ Objectives
 - Leave the first version of the chatbot ready to integrate with university systems in future versions
 
  ## Team Formation/Role Assignments
- - Martin Ramirez
-  - Role: AI Integration Developer
-    - Responsibilities: Develop the Google Gemini AI tool for its functionality with the API key.
- - Angel Espana del Rio
-  - Role: Frontend Developer
-    - Responsibilities: Develop the user interface for the chatbot.
- - Elmer Carballo
-  - Role: Backend Developer
-    - Responsibilities: Manage server-side logic and ensure scalability and compliance with data privacy.
- - Daniel Mota
-  - Role: Documentation Expert
-    - Responsibilities: Prepare project documentation, including requirements and user guides.
+ | Team Member | Role |
+---|---
+| Martin Ramirez | AI Integration Developer |
+| Angel Espana del Rio | Frontend Developer |
+| Elmer Carballo | Backend Developer |
+| Daniel Mota | Documentation Expert |
 
 ## Initial Brainstorming Session Output
 Potential User Personas:
