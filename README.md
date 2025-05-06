@@ -1,24 +1,63 @@
 # ChatBot using Gemini API and streamlit
+
+ ## Team Formation/Role Assignments
+ | Team Member | Role |
+---|---
+| Martin Ramirez | AI Integration Developer |
+| Angel Espana del Rio | Frontend Developer |
+| Elmer Carballo | Backend Developer |
+| Daniel Mota | Documentation Expert |
+
+## 1. Introduction
+>Sunny The Sunbird AI is an AI model designed to assist those who may have questions about things regarding Fresno Pacific University.
+
+### 1.1 Purpose 
+>This document details the functions and certain design elements of the AI model/site.
+
+### 1.2 Intended Audience and Reading Suggestions
+>This document is primarily intended to explain the requirements, value, and functionality of Sunny The Sunbird AI for those who may be reviewing the project.
+
+### 1.3 Product Scope
+>Sunny the Sunbird is an AI model intended to answer questions that students, professors, or even visitors may have, as well as offering assistance where it is needed.
+
+## 2. Overall Description
+
+### 2.1 Product Perspective
+>This ChatBot is a conversational bot designed to address various questions about Fresno Pacific University. It automatically processes information from a provided PDF file and leverages the Gemini API for processing techniques and responds to user inquiries effectively.
+### 2.2 Product Functions
+>Major functions include: Information processing, Usage Statistics
+![diagram](use_case_diagram.png)
+
+### 2.3 User Classes and Characteristics
+>Student Persona: Fresno Pacific University student needing efficient support for university-related tasks. 
+>- Needs quick answers to FAQs, redirection to official resources, and university-related event updates.
+
+>Professor Persona: Fresno Pacific University faculty member seeking information to support teaching and student guidance. 
+>- Needs access to academic policies, departmental contact details, and updates on university events relevant to faculty responsibilities.
+
+>Visitor Persona: An individual exploring Fresno Pacific University’s campus or services, such as prospective students, parents, or event attendees. 
+>- Needs general information about campus facilities (e.g., athletic complexes, parking), directions, and public event schedules. 
+
+>Administrator Persona: Fresno Pacific University staff managing student inquiries. 
+>- Needs reduced workload through automation and insights into common student questions.
+
+### 2.4 Operating Environment
+>Google Gemini was used as a base for the AI model, and 
+### 2.5 Design and Implementation Constraints
+>Since the project will be implemented as a website that consolidates information being hosted by a third party (Fresno State), the website will only be able to function while Fresno State's online resources are functioning properly. Furthermore, any changes to how or where data pertinent to the website will have to be accounted for manually. Additionally, the website will be unable to run on machines that have no web browsers (Internet Edge, Firefox, Google Chrome, Safari) and/or no internet connection.
+
+### 2.6 User Documentation
+>Users will have prompts on-screen to guide them through the schedule generation process (see section 3.1).
+
+### 2.7 Assumptions and Dependencies
+>It is assumed that
+>* Fresno State's web services will remain live
+>* The manner in which Fresno State hosts course related content that this project web scrapes will not change
+>* Railway (the project's web hosting service) will remain operational
+
+
 ## Overview
 This ChatBot is a conversational bot designed to address various questions about Fresno Pacific University. It automatically processes information from a provided PDF file and leverages the Gemini API for processing techniques and responds to user inquiries effectively.
-
-## Installation
-To run this ChatBot, you need to follow these steps:
-
-1. Ensure you have Python installed on your system.
-2. Clone this repository to your local machine.
-3. Install the required Python packages by running
-```
-pip install -r requirements.txt
-```
-4. Set up your Google API key by creating a `.env` file and adding your key:
-
-## Usage
-Once you have installed the necessary dependencies and set up your Google API key, you can run the application using Streamlit. Execute the following command:
-```
-Streamlit run test.py
-```
-This command will start the Streamlit server, and you can access the application in your web browser.
 
 ## Features
 - **Automatic PDF Processing:** The application automatically extracts text from a provided PDF file.
@@ -28,9 +67,6 @@ This command will start the Streamlit server, and you can access the application
 
 ## Contributing
 Contributions to this ChatBot project are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 
 ## Project Goal:
@@ -59,13 +95,6 @@ Objectives
 - Achieve a user satisfaction score of 80% or higher within the first month of launch 
 - Leave the first version of the chatbot ready to integrate with university systems in future versions
 
- ## Team Formation/Role Assignments
- | Team Member | Role |
----|---
-| Martin Ramirez | AI Integration Developer |
-| Angel Espana del Rio | Frontend Developer |
-| Elmer Carballo | Backend Developer |
-| Daniel Mota | Documentation Expert |
 
 ## Initial Brainstorming Session Output
 Potential User Personas:
