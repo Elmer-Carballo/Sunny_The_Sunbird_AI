@@ -59,6 +59,51 @@
 
 ### 3.1 User Interfaces
 
+> * **Splash Page**
+![Splash Page](image.png)
+> * **Term Selection**
+![AI response](image2.png)
+
+### 3.2 Hardware Interfaces
+>The project is hosted on Google Cloud, and utilizes the Gemini API
+
+### 3.3 Software Interfaces
+>Our software works by communicating with Google's Gemini API that is in charge of printing answers. Its main function is to generate responses to whatever query the user submits.
+
+### 3.4 Communications Interfaces
+>An internet connection, web browser, and access to Google Cloud, are needed to utilize Sunny The Sunbird AI.
+
+## 4. System Features
+### 4.1 Splash Page
+#### 4.1.1 Description
+>This feature allows displays the purpose of the website, some context as to how the website came about, and gives the user instruction on how to use the website as a PWA (progressive web app) if they are on a mobile device. It also prominently features a "Get started button" that will take the user to the schedule generator when clicked.
+
+#### 4.1.2 Stimulus/Response Sequences
+>In order to view the content of the webpage the user would need to scroll if they are using a screen smaller than the canvas size of the webpage. In order to use the site as a PWA on a mobile device they would need to save the webpage to their homescreen then launch the site from there. In order to use the "Get Started" button the user would need to click on the button (see section 3.1 - Splash Page).
+
+#### 4.1.3 Functional Requirements
+>See sections 2.5, 2.7, and 3.4.
+
+
+### 4.2 Term Selection
+#### 4.2.1 Description
+>This feature allows the user to select which term they would like to generate schedules for.
+
+#### 4.2.2 Stimulus/Response Sequences
+>The user will be presented with three options: the current term, upcoming break term, and the next full term (currently that is Fall 2022, Winter 2023, and Spring 2023). In order to select one of these the user need only click on the corresponding box. (See section 3.1 - Term Selection)
+
+#### 4.2.3 Functional Requirements
+> See sections 2.5, 2.7, and 3.4.
+
+
+## 5. Other Nonfunctional Requirements
+
+### 5.1 Software Quality Attributes
+### 5.1.1 Ease of Use
+>It is imperative that the website be intuitive and simple to use, as the primary objective is to minimize time spent creating the schedules.
+
+### 5.1.2 Accuracy and Availability
+>Ensuring the website delivers the most up to date results as well as only accurate results is of the upmost priority. The website should never display inaccurate schedules and should be available for reuse each semester.
 
 ## Overview
 This ChatBot is a conversational bot designed to address various questions about Fresno Pacific University. It automatically processes information from a provided PDF file and leverages the Gemini API for processing techniques and responds to user inquiries effectively.
