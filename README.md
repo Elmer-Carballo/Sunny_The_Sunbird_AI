@@ -42,18 +42,22 @@
 >- Needs reduced workload through automation and insights into common student questions.
 
 ### 2.4 Operating Environment
->Google Gemini was used as a base for the AI model, and 
+>Google Gemini was used as a base for the AI model, and a PDF containing information is what the AI draws from to answer the user.
+
 ### 2.5 Design and Implementation Constraints
->Since the project will be implemented as a website that consolidates information being hosted by a third party (Fresno State), the website will only be able to function while Fresno State's online resources are functioning properly. Furthermore, any changes to how or where data pertinent to the website will have to be accounted for manually. Additionally, the website will be unable to run on machines that have no web browsers (Internet Edge, Firefox, Google Chrome, Safari) and/or no internet connection.
+>Sunny the Sunbird will be implemented as a website that hosts the AI model, though as of now is currently seperated from Fresno Pacific University's online resources, so even if these resources were to malfunction for whatever reason, the site would still work.
 
 ### 2.6 User Documentation
->Users will have prompts on-screen to guide them through the schedule generation process (see section 3.1).
+>The user is prompted to ask questions about Fresno Pacific University to the AI model, though what they ask is up to them, the AI will likely not respond to unrelated questions properly.
 
 ### 2.7 Assumptions and Dependencies
 >It is assumed that
->* Fresno State's web services will remain live
->* The manner in which Fresno State hosts course related content that this project web scrapes will not change
->* Railway (the project's web hosting service) will remain operational
+>* The user types questions related to Fresno Pacific University and its services
+>* Google Gemini remains operational
+
+## 3. External Interface Requirements
+
+### 3.1 User Interfaces
 
 
 ## Overview
